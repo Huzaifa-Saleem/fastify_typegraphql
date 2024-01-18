@@ -1,0 +1,17 @@
+version: "3.6"
+# https://docs.docker.com/compose/compose-file/
+
+services:
+  db:
+    image: postgres:16-alpine
+    volumes:
+      - db_lbp:/var/lib/postgresql16/data
+    environment:
+      - POSTGRES_DB=db_name
+      - POSTGRES_USER=db_user
+      - POSTGRES_PASSWORD=db_password
+    ports:
+      - "25433:5432"
+
+volumes:
+  db_lbp:

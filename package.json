@@ -1,0 +1,28 @@
+{
+  "name": "fastify_typegraphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --exit-child --transpile-only src/main.ts"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^6.0.0",
+    "@fastify/jwt": "^5.0.1",
+    "@prisma/client": "3.14.0",
+    "apollo-server-core": "^3.8.2",
+    "apollo-server-fastify": "^3.8.2",
+    "argon2": "^0.28.5",
+    "class-validator": "^0.13.2",
+    "fastify": "^3.0.0",
+    "graphql": "^15.3.0",
+    "prisma": "^3.15.0",
+    "reflect-metadata": "^0.1.13",
+    "subscriptions-transport-ws": "^0.11.0",
+    "type-graphql": "^1.1.1"
+  }
+}
