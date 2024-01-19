@@ -19,10 +19,10 @@ model User {
   followedBy User[] @relation("UserFollows")
   following  User[] @relation("UserFollows")
 
-  messages Messages[]
+  tweets Tweets[]
 }
 
-model Messages {
+model Tweets {
   id        String   @unique @default(uuid())
   body      String
   createdAt DateTime @default(now())
